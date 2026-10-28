@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
+  <meta name="description" content="CSP — Developed by Killerdutch">
+  <title>CSP — Developed by Killerdutch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#" aria-label="CSP home">
+      <span>CSP</span>
+      <i></i>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home" class="nav-link active" data-i18n="home">خانه</a>
+      <a href="#tools" class="nav-link" data-i18n="tools">ابزارها</a>
+      <a href="#about" class="nav-link" data-i18n="about">درباره</a>
+      <a href="#community" class="nav-link" data-i18n="community">ارتباط</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button
+        class="icon-button theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Toggle light and dark theme"
+        title="Change theme"
+      >
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.6 8.6 0 1 0 20.2 15.5Z"></path>
+        </svg>
+      </button>
+
+      <label class="language-select">
+        <span class="visually-hidden" data-i18n="language">زبان</span>
+        <select id="languageSelect" aria-label="Select language">
+          <option value="fa">FA</option>
+          <option value="en" selected>EN</option>
+          <option value="de">DE</option>
+          <option value="ru">RU</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="backdrop-orb"></div>
+        <div class="desk-scene">
+          <div class="window-frame">
+            <div class="window-view"></div>
+          </div>
+
+          <div class="desk-lamp">
+            <div class="lamp-shade"></div>
+            <div class="lamp-arm"></div>
+            <div class="lamp-base"></div>
+          </div>
+
+          <div class="desk-plant">
+            <span></span><span></span><span></span>
+            <i></i>
+          </div>
+
+          <div class="desk-surface"></div>
+
+          <div class="laptop">
+            <div class="laptop-screen">
+              <span class="laptop-logo">CSP</span>
+              <span class="laptop-caption">DEVELOPED BY KILLERDUTCH</span>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+
+          <div class="coffee-cup">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">CSP</h1>
+        <p class="hero-credit" data-i18n="credit">
+          DEVELOPED BY KILLERDUTCH
+        </p>
+      </div>
+
+      <a class="scroll-indicator" href="#tools" aria-label="Scroll to tools">
+        <span class="scroll-dot"></span>
+        <span class="scroll-line"></span>
+        <span class="scroll-label" data-i18n="scroll">پایین</span>
+      </a>
+    </section>
+
+    <section class="tools-section section-container" id="tools">
+      <div class="section-heading">
+        <div class="heading-copy">
+          <span class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span data-i18n="sectionLabel">ابزارها</span>
+          </span>
+          <h2 data-i18n="resourcesTitle">ابزارها و منابع</h2>
+        </div>
+
+        <div class="tool-controls">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+            <input
+              id="searchInput"
+              type="search"
+              data-i18n-placeholder="searchPlaceholder"
+              placeholder="جست‌وجو..."
+              autocomplete="off"
+            >
+          </label>
+
+          <label class="filter-box">
+            <span class="visually-hidden" data-i18n="filter">دسته‌بندی</span>
+            <select id="categoryFilter">
+              <option value="all" data-i18n="allCategories">همه</option>
+              <option value="tools" data-i18n="categoryTools">ابزارها</option>
+              <option value="learning" data-i18n="categoryLearning">آموزش</option>
+              <option value="resources" data-i18n="categoryResources">منابع</option>
+              <option value="source" data-i18n="categorySource">سورس</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid" aria-live="polite">
+        <!-- کارت‌ها به‌صورت خودکار از app.js ساخته می‌شوند. -->
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <span class="empty-symbol">⌕</span>
+        <p data-i18n="noResults">موردی پیدا نشد.</p>
+      </div>
+    </section>
+
+    <section class="community-section section-container" id="community">
+      <div class="community-card">
+        <a
+          class="telegram-mark"
+          href="https://t.me/KILLERDUTCH_CHANNEL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open CSP Telegram channel"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21.5 4.5 18.3 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13.6.8 12c-1.1-.3-1.1-1 .2-1.5L20.1 3c.9-.3 1.7.2 1.4 1.5Z"></path>
+          </svg>
+        </a>
+
+        <div class="community-copy">
+          <h3 data-i18n="communityTitle">کانال تلگرام</h3>
+          <p data-i18n="communityDescription">
+            برای دیدن مطالب و به‌روزرسانی‌ها.
+          </p>
+        </div>
+
+        <a
+          class="community-link"
+          href="https://t.me/KILLERDUTCH_CHANNEL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>@KILLERDUTCH_CHANNEL</span>
+          <span class="arrow-icon" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-anchor" id="about" aria-label="About CSP">
+      <span>CSP</span>
+      <span data-i18n="credit">DEVELOPED BY KILLERDUTCH</span>
+    </section>
+  </main>
+
+  <footer class="footer section-container">
+    <a class="footer-brand" href="#home">CSP</a>
+    <span class="footer-divider"></span>
+    <span class="footer-credit" data-i18n="footerCredit">
+      Developed by Killerdutch
+    </span>
+
+    <div class="footer-socials">
+      <a
+        href="https://t.me/KILLERDUTCH_CHANNEL"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Telegram channel"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21.5 4.5 18.3 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13.6.8 12c-1.1-.3-1.1-1 .2-1.5L20.1 3c.9-.3 1.7.2 1.4 1.5Z"></path>
+        </svg>
+      </a>
+
+      <a
+        href="https://t.me/Chat_to_killerdutch_botbot"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Telegram bot"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="7" width="16" height="13" rx="4"></rect>
+          <path d="M9 7V4h6v3M8 12h.01M16 12h.01M9 16h6"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
