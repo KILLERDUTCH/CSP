@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="CSP Team — Cyber Security Protocol">
+  <title>CSP Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="feedback-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="cursor-core" aria-hidden="true"></div>
+  <div class="page-frame" id="pageFrame">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="CSP Team home">
+        <svg class="brand-computer" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="5.5" y="7.5" width="37" height="26" rx="3.5" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M18 41h12M24 34v7M13 27l7-7 5 5 9-10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 16h4v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>CSP <b>TEAM</b></span>
+      </a>
+      <div class="header-actions">
+        <div class="device-switch" role="group" aria-label="Preview layout">
+          <button class="device-button active" type="button" data-device="desktop" aria-label="Desktop view" title="Desktop">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <button class="device-button" type="button" data-device="mobile" aria-label="Mobile view" title="Mobile">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M10 5h4M11 18.5h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <a class="telegram-icon" href="https://t.me/killerdutch_channel" target="_blank" rel="noopener noreferrer" aria-label="CSP Telegram channel" title="Telegram channel">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 3-3.3 18-6.1-5-3.4 3.2.5-6.3L19 5.1 6.3 11.8 2 10.2 21 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="CSP Team">
+        <h1>CSP <span>TEAM</span></h1>
+      </section>
+
+      <section class="tools-section" id="tools">
+        <div class="section-head">
+          <h2>TOOLS</h2>
+          <span class="section-count" id="toolCount">00</span>
+        </div>
+        <div class="tool-toolbar">
+          <label class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <input id="toolSearch" type="search" placeholder="Search tools" autocomplete="off" aria-label="Search tools">
+          </label>
+          <div class="filters" id="filterList" aria-label="Tool categories"><button class="filter-chip active" type="button" data-filter="all">ALL</button></div>
+        </div>
+        <div class="tool-grid" id="toolGrid" aria-live="polite"><div class="loading-state">LOADING<span class="loading-dots">...</span></div></div>
+      </section>
+
+      <section class="feedback-section" id="feedback">
+        <div class="section-head feedback-heading"><h2>FEEDBACK</h2><span class="feedback-mark">↗</span></div>
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-row">
+            <label class="field"><span>ALIAS</span><input name="alias" type="text" placeholder="Your name" maxlength="40" required></label>
+            <label class="field"><span>EMAIL / TELEGRAM ID</span><input name="contact" type="text" placeholder="you@email.com / @username" maxlength="120" required></label>
+          </div>
+          <label class="field message-field"><span>MESSAGE</span><textarea name="message" rows="4" placeholder="Write your feedback..." maxlength="1800" required></textarea></label>
+          <label class="trap" aria-hidden="true">Do not fill<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+          <div class="form-submit-row"><span class="form-status" id="formStatus" role="status" aria-live="polite"></span><button class="send-button" type="submit"><span>SEND MESSAGE</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"><span>CSP TEAM</span><a href="https://t.me/killerdutch_channel" target="_blank" rel="noopener noreferrer">TELEGRAM CHANNEL ↗</a><span>© 2026</span></footer>
+  </div>
+</body>
+</html>

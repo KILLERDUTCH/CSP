@@ -1,0 +1,98 @@
+[
+  {
+    "name": "JSON Formatter",
+    "description": "Format and validate JSON data.",
+    "category": "DEVELOPER",
+    "icon": "code",
+    "url": "https://jsonformatter.org/",
+    "status": "active"
+  },
+  {
+    "name": "Regex Tester",
+    "description": "Test and debug regular expressions.",
+    "category": "DEVELOPER",
+    "icon": "terminal",
+    "url": "https://regex101.com/",
+    "status": "active"
+  },
+  {
+    "name": "CyberChef",
+    "description": "A collection of browser-based data operations.",
+    "category": "UTILITY",
+    "icon": "layers",
+    "url": "https://gchq.github.io/CyberChef/",
+    "status": "active"
+  },
+  { 
+    "name": "CCTV hacking package",
+    "description": "a package of Learning how to hack a CCTV camera with a mobile phone ",
+    "category": "training",
+    "icon": "layers",
+    "url": "https://t.me/Asy_KD_bot?start=7UBUJBoFGerudDW",
+    "status": "active"
+  },
+  {
+      "name": "Hide Files (rat) in Images and Videos",
+    "description": "A tool of hiding files in images and videos of computer ",
+    "category": "tools",
+    "icon": "terminal",
+    "url": "https://t.me/Asy_KD_bot?start=Jwhb29KGIdMmAwu",
+    "status": "active"
+  },
+  {
+    "name": "PhoneSploit",
+    "description": "PhoneSploit resource.",
+    "category": "TOOLS",
+    "icon": "smartphone",
+    "url": "https://t.me/Asy_KD_bot?start=WXbXQIlrgU12TsN",
+    "status": "active"
+  },
+  {
+    "name": "Master Holmes Tutorial",
+    "description": "Learn how to use Master Holmes.",
+    "category": "TRAINING",
+    "icon": "book",
+    "url": "https://t.me/Asy_KD_bot?start=3WSRGdYCNwpG2mw",
+    "status": "active"
+  },
+  {
+    "name": "Phone RAT Resource",
+    "description": "Phone RAT learning resource.",
+    "category": "TRAINING",
+    "icon": "smartphone",
+    "url": "https://t.me/Asy_KD_bot?start=tesBPS04q4uuOdZ",
+    "status": "active"
+  },
+  {
+    "name": "Dark Psychology Book",
+    "description": "Dark psychology book.",
+    "category": "RESOURCES",
+    "icon": "book",
+    "url": "https://t.me/Asy_KD_bot?start=l6cmgLXwhcnwte7",
+    "status": "active"
+  },
+  {
+    "name": "DDoS Tool 1",
+    "description": "DDoS tool resource.",
+    "category": "TOOLS",
+    "icon": "terminal",
+    "url": "https://t.me/Asy_KD_bot?start=256UDtgNPVpg1vY",
+    "status": "active"
+  },
+  {
+    "name": "DDoS Tool 2",
+    "description": "DDoS tool resource.",
+    "category": "TOOLS",
+    "icon": "terminal",
+    "url": "https://t.me/Asy_KD_bot?start=XllYfCQMVnQgBtg",
+    "status": "active"
+  },
+  {
+    "name": "Animated Website Source",
+    "description": "Animated website source code.",
+    "category": "SOURCE",
+    "icon": "code",
+    "url": "https://t.me/Asy_KD_bot?start=NkUvIGzSwZVDrmH",
+    "status": "active"
+  }
+]
